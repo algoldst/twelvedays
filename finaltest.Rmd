@@ -11,13 +11,6 @@ library(twelvedays)
 ```
 
 
-
-#library(testthat)
-#library(twelvedays)
-
-#test_check("twelvedays")
-
-
 ```{r}
 # Read in the data for song lyrics
 xmas <- read.csv(here::here("../xmas.csv"))
