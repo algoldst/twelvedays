@@ -13,6 +13,7 @@
 #' @import glue
 #' @import dplyr
 #' @import purrr
+#' @import english
 #'
 #' @export
 
@@ -38,7 +39,7 @@ make_phrase <- function(num, num_word, item, verb, adjective, location){
   location <- str_replace_na(location, "")
 
   # Glue words
-  glue::glue("{num} {adjective} {item} {verb}{location}")
+  glue::glue("{english::ordinal(num)} {adjective} {item} {verb}{location}")
 
 }
 
