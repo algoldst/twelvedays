@@ -34,7 +34,7 @@ sing_day <- function(dataset, line, phrase_col){
   if(line > 1) {
     out <- paste(out,
             paste(phrases[line:2], sep="\n", collapse="\n"),
-            sep=",\n", collapse="")
+            sep="\n", collapse="")
     out <- paste(out, "and ", sep="\n")
   }
   out <- paste(out, phrases[1], ".")
